@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narsingh Real Estate Team | RE/MAX Community Realty</title>
+  <meta name="description" content="Brandon & Jai Narsingh – RE/MAX Community Realty. Award-winning real estate team serving the GTA. Buy, sell, or get a free home valuation today." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo" aria-label="Narsingh Team Home">
+        <div class="logo-badge">
+          <span class="logo-remax">RE/MAX</span>
+          <span class="logo-divider"></span>
+          <span class="logo-team">Narsingh<br>Team</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#listings" class="nav-link tab-trigger" data-tab="our-listings">Our Listings</a></li>
+          <li><a href="#listings" class="nav-link tab-trigger" data-tab="realtorca">Realtor.ca Listings</a></li>
+          <li><a href="#listings" class="nav-link tab-trigger nav-cta" data-tab="valuation">Free Valuation</a></li>
+          <li><a href="#buy" class="nav-link">Why Buy With Us</a></li>
+          <li><a href="#sell" class="nav-link">Why Sell With Us</a></li>
+          <li><a href="#team" class="nav-link">Meet the Team</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-badge">RE/MAX Community Realty Inc.</div>
+      <h1 class="hero-title">Your Trusted<br><span class="accent-red">Real Estate</span><br>Partners</h1>
+      <p class="hero-sub">Brandon &amp; Jai Narsingh — Award-winning agents committed to delivering exceptional results for buyers and sellers across the GTA.</p>
+      <div class="hero-actions">
+        <a href="#listings" class="btn btn-primary tab-trigger" data-tab="our-listings">View Our Listings</a>
+        <a href="#listings" class="btn btn-outline tab-trigger" data-tab="valuation">Free Home Valuation</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">#1</span>
+          <span class="stat-label">Top Producing Agent<br>RE/MAX Community 2025</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">40+</span>
+          <span class="stat-label">Years Combined<br>Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Client-First<br>Approach</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ========== LISTINGS TABS ========== -->
+  <section class="listings-section" id="listings">
+    <div class="container">
+      <div class="tabs-nav" role="tablist" aria-label="Listings tabs">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-our-listings" id="tab-our-listings" data-tab="our-listings">
+          <i data-feather="home"></i> Our Listings
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-realtorca" id="tab-realtorca" data-tab="realtorca">
+          <i data-feather="map-pin"></i> Realtor.ca Listings
+        </button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-valuation" id="tab-valuation" data-tab="valuation">
+          <i data-feather="trending-up"></i> Free Home Valuation
+        </button>
+      </div>
+
+      <!-- OUR LISTINGS PANEL -->
+      <div class="tab-panel active" id="panel-our-listings" role="tabpanel" aria-labelledby="tab-our-listings">
+        <div class="panel-header">
+          <h2>Our Current Listings</h2>
+          <p>Handpicked properties expertly marketed and represented by the Narsingh Team.</p>
+        </div>
+        <div class="listings-grid" id="our-listings-grid">
+          <!-- Sample listing cards -->
+          <div class="listing-card featured">
+            <div class="listing-badge">Featured</div>
+            <div class="listing-img-wrap">
+              <div class="listing-img-placeholder">
+                <i data-feather="image"></i>
+                <span>Property Photo</span>
+              </div>
+            </div>
+            <div class="listing-body">
+              <div class="listing-price">$1,249,000</div>
+              <h3 class="listing-address">42 Maple Ridge Drive</h3>
+              <p class="listing-city">Brampton, ON · L6Y 2K4</p>
+              <div class="listing-details">
+                <span><i data-feather="layers"></i> 4 Bed</span>
+                <span><i data-feather="droplet"></i> 3 Bath</span>
+                <span><i data-feather="maximize"></i> 2,450 sqft</span>
+              </div>
+              <div class="listing-actions">
+                <a href="#contact" class="btn btn-sm btn-primary">Book Showing</a>
+                <button class="btn btn-sm btn-ghost">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="listing-img-wrap">
+              <div class="listing-img-placeholder">
+                <i data-feather="image"></i>
+                <span>Property Photo</span>
+              </div>
+            </div>
+            <div class="listing-body">
+              <div class="listing-price">$879,900</div>
+              <h3 class="listing-address">17 Brookfield Crescent</h3>
+              <p class="listing-city">Mississauga, ON · L5R 1P3</p>
+              <div class="listing-details">
+                <span><i data-feather="layers"></i> 3 Bed</span>
+                <span><i data-feather="droplet"></i> 2 Bath</span>
+                <span><i data-feather="maximize"></i> 1,780 sqft</span>
+              </div>
+              <div class="listing-actions">
+                <a href="#contact" class="btn btn-sm btn-primary">Book Showing</a>
+                <button class="btn btn-sm btn-ghost">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="listing-card">
+            <div class="listing-img-wrap">
+              <div class="listing-img-placeholder">
+                <i data-feather="image"></i>
+                <span>Property Photo</span>
+              </div>
+            </div>
+            <div class="listing-body">
+              <div class="listing-price">$2,100,000</div>
+              <h3 class="listing-address">88 Estates Blvd</h3>
+              <p class="listing-city">Oakville, ON · L6H 7A2</p>
+              <div class="listing-details">
+                <span><i data-feather="layers"></i> 5 Bed</span>
+                <span><i data-feather="droplet"></i> 4 Bath</span>
+                <span><i data-feather="maximize"></i> 3,900 sqft</span>
+              </div>
+              <div class="listing-actions">
+                <a href="#contact" class="btn btn-sm btn-primary">Book Showing</a>
+                <button class="btn btn-sm btn-ghost">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="listings-cta">
+          <a href="https://www.realtor.ca/agent/2213245/brandon-narsingh-10-kingsbridge-garden-cir-suite-100-mississauga-ontario-l5r4g8" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+            <i data-feather="external-link"></i> Show All Our Listings on Realtor.ca
+          </a>
+        </div>
+      </div>
+
+      <!-- REALTOR.CA PANEL -->
+      <div class="tab-panel" id="panel-realtorca" role="tabpanel" aria-labelledby="tab-realtorca">
+        <div class="panel-header">
+          <h2>Search MLS® Listings</h2>
+          <p>Search nationwide MLS® properties powered by the Canadian Real Estate Association (CREA) DDF® data feed.</p>
+        </div>
+
+        <form class="search-form" id="ddf-search-form" novalidate>
+          <div class="search-grid">
+            <div class="field-group">
+              <label for="search-location">City / Postal Code / Neighbourhood</label>
+              <div class="input-icon-wrap">
+                <i data-feather="map-pin"></i>
+                <input type="text" id="search-location" name="location" placeholder="e.g. Brampton, ON or L6Y 2K4" />
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="search-type">Property Type</label>
+              <div class="input-icon-wrap">
+                <i data-feather="home"></i>
+                <select id="search-type" name="propertyType">
+                  <option value="">Any Type</option>
+                  <option value="detached">Detached</option>
+                  <option value="semi-detached">Semi-Detached</option>
+                  <option value="townhouse">Townhouse / Row</option>
+                  <option value="condo">Condo / Apartment</option>
+                  <option value="bungalow">Bungalow</option>
+                  <option value="land">Vacant Land</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="search-min-price">Min Price</label>
+              <div class="input-icon-wrap">
+                <i data-feather="dollar-sign"></i>
+                <select id="search-min-price" name="minPrice">
+                  <option value="">No Min</option>
+                  <option value="300000">$300,000</option>
+                  <option value="500000">$500,000</option>
+                  <option value="700000">$700,000</option>
+                  <option value="900000">$900,000</option>
+                  <option value="1100000">$1,100,000</option>
+                  <option value="1500000">$1,500,000</option>
+                  <option value="2000000">$2,000,000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="search-max-price">Max Price</label>
+              <div class="input-icon-wrap">
+                <i data-feather="dollar-sign"></i>
+                <select id="search-max-price" name="maxPrice">
+                  <option value="">No Max</option>
+                  <option value="500000">$500,000</option>
+                  <option value="700000">$700,000</option>
+                  <option value="900000">$900,000</option>
+                  <option value="1100000">$1,100,000</option>
+                  <option value="1500000">$1,500,000</option>
+                  <option value="2000000">$2,000,000</option>
+                  <option value="3000000">$3,000,000+</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="search-beds">Bedrooms</label>
+              <div class="input-icon-wrap">
+                <i data-feather="layers"></i>
+                <select id="search-beds" name="beds">
+                  <option value="">Any</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                  <option value="5">5+</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="search-baths">Bathrooms</label>
+              <div class="input-icon-wrap">
+                <i data-feather="droplet"></i>
+                <select id="search-baths" name="baths">
+                  <option value="">Any</option>
+                  <option value="1">1+</option>
+                  <option value="2">2+</option>
+                  <option value="3">3+</option>
+                  <option value="4">4+</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="search-ownership">Ownership Type</label>
+              <div class="input-icon-wrap">
+                <i data-feather="key"></i>
+                <select id="search-ownership" name="ownership">
+                  <option value="">Any</option>
+                  <option value="freehold">Freehold</option>
+                  <option value="condo">Condo</option>
+                  <option value="leasehold">Leasehold</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="search-keywords">Keywords</label>
+              <div class="input-icon-wrap">
+                <i data-feather="search"></i>
+                <input type="text" id="search-keywords" name="keywords" placeholder="e.g. pool, garage, basement suite" />
+              </div>
+            </div>
+          </div>
+          <div class="search-actions">
+            <button type="submit" class="btn btn-primary btn-large">
+              <i data-feather="search"></i> Search MLS® Listings
+            </button>
+            <button type="button" class="btn btn-outline" id="reset-search">
+              <i data-feather="rotate-ccw"></i> Reset
+            </button>
+          </div>
+        </form>
+
+        <div class="ddf-results" id="ddf-results">
+          <div class="ddf-results-inner">
+            <div class="ddf-placeholder">
+              <i data-feather="search"></i>
+              <h3>Ready to Search</h3>
+              <p>Enter your search criteria above to browse available MLS® listings, or click below to open the full Realtor.ca search powered by CREA's DDF® feed.</p>
+              <a href="https://www.realtor.ca/map#ZoomLevel=10&Center=43.7315%2C-79.7624&LatitudeMax=44.0&LatitudeMin=43.3&LongitudeMax=-79.2&LongitudeMin=-80.3&view=list&CurrentPage=1&RecordsPerPage=12&Sort=6-D&PropertyTypeGroupID=1&TransactionTypeId=2&PriceMin=0&PriceMax=0" target="_blank" rel="noopener" class="btn btn-primary">
+                <i data-feather="external-link"></i> Browse All MLS® Listings on Realtor.ca
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ddf-note">
+          <i data-feather="info"></i>
+          <p>Listings are sourced from the CREA DDF® (Data Distribution Facility) and are subject to availability. All MLS® data is the property of CREA and its members. <strong>Want help finding your perfect home?</strong> <a href="#contact">Contact us directly</a> — we'll do the search for you.</p>
+        </div>
+      </div>
+
+      <!-- FREE VALUATION PANEL -->
+      <div class="tab-panel" id="panel-valuation" role="tabpanel" aria-labelledby="tab-valuation">
+        <div class="valuation-layout">
+          <div class="valuation-copy">
+            <div class="panel-header" style="text-align:left; margin-bottom:0;">
+              <div class="section-chip">100% Free · No Obligation</div>
+              <h2>What Is Your<br>Home Worth?</h2>
+              <p>Discover your property's current market value — backed by real-time MLS® comparable sales, neighbourhood trends, and expert analysis from the Narsingh Team.</p>
+            </div>
+            <ul class="valuation-bullets">
+              <li><i data-feather="check-circle"></i> Personalized CMA (Comparative Market Analysis)</li>
+              <li><i data-feather="check-circle"></i> Recent neighbourhood sales data</li>
+              <li><i data-feather="check-circle"></i> Expert pricing strategy consultation</li>
+              <li><i data-feather="check-circle"></i> Delivered within 24 hours</li>
+              <li><i data-feather="check-circle"></i> Zero cost. Zero obligation.</li>
+            </ul>
+          </div>
+
+          <div class="valuation-form-wrap">
+            <form class="valuation-form" id="valuation-form" novalidate>
+              <h3>Get Your Free Valuation</h3>
+              <div class="field-group">
+                <label for="val-name">Full Name *</label>
+                <div class="input-icon-wrap">
+                  <i data-feather="user"></i>
+                  <input type="text" id="val-name" name="name" placeholder="Jane Smith" required />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="val-email">Email Address *</label>
+                <div class="input-icon-wrap">
+                  <i data-feather="mail"></i>
+                  <input type="email" id="val-email" name="email" placeholder="jane@example.com" required />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="val-phone">Phone Number</label>
+                <div class="input-icon-wrap">
+                  <i data-feather="phone"></i>
+                  <input type="tel" id="val-phone" name="phone" placeholder="(416) 555-0123" />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="val-address">Property Address *</label>
+                <div class="input-icon-wrap">
+                  <i data-feather="map-pin"></i>
+                  <input type="text" id="val-address" name="address" placeholder="123 Main St, Brampton, ON L6Y 2K4" required />
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="val-type">Property Type</label>
+                <div class="input-icon-wrap">
+                  <i data-feather="home"></i>
+                  <select id="val-type" name="propertyType">
+                    <option value="">Select type</option>
+                    <option value="detached">Detached</option>
+                    <option value="semi-detached">Semi-Detached</option>
+                    <option value="townhouse">Townhouse</option>
+                    <option value="condo">Condo</option>
+                    <option value="bungalow">Bungalow</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="val-timeline">Selling Timeline</label>
+                <div class="input-icon-wrap">
+                  <i data-feather="calendar"></i>
+                  <select id="val-timeline" name="timeline">
+                    <option value="">When are you looking to sell?</option>
+                    <option value="asap">As soon as possible</option>
+                    <option value="3months">Within 3 months</option>
+                    <option value="6months">Within 6 months</option>
+                    <option value="1year">Within 1 year</option>
+                    <option value="exploring">Just exploring</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-group">
+                <label for="val-notes">Additional Notes</label>
+                <textarea id="val-notes" name="notes" rows="3" placeholder="Renovations, unique features, specific questions..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-large btn-block">
+                <i data-feather="trending-up"></i> Request My Free Valuation
+              </button>
+              <p class="form-disclaimer">By submitting, you agree to be contacted by the Narsingh Team at RE/MAX Community Realty. We respect your privacy.</p>
+            </form>
+            <div class="form-success hidden" id="valuation-success">
+              <div class="success-icon"><i data-feather="check-circle"></i></div>
+              <h3>Thank You!</h3>
+              <p>We've received your valuation request and will have your personalized Comparative Market Analysis ready within 24 hours.</p>
+              <p><strong>Expect a call or email from the Narsingh Team shortly.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY BUY WITH US ========== -->
+  <section class="why-section why-buy" id="buy">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-chip">For Buyers</div>
+        <h2>Why Buy With Us?</h2>
+        <p class="section-sub">We were once in your shoes — both as first-time homebuyers and seasoned purchasers. We understand what's at stake, and we're with you every step of the way.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon why-icon--blue">
+            <i data-feather="users"></i>
+          </div>
+          <h3>Trusted Professional Network</h3>
+          <p>Gain instant access to our dedicated team of vetted mortgage brokers, certified property inspectors, and experienced real estate lawyers — all working in your best interest.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon why-icon--red">
+            <i data-feather="bar-chart-2"></i>
+          </div>
+          <h3>Deep Market Research &amp; Due Diligence</h3>
+          <p>We execute extensive market research and thorough due diligence on every property before you commit. You'll always have the data you need to make a confident, informed decision.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon why-icon--blue">
+            <i data-feather="file-text"></i>
+          </div>
+          <h3>Full Inspection Report — Included</h3>
+          <p>Every property purchase includes a comprehensive, full professional inspection report so you know exactly what you're buying — no surprises after closing.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon why-icon--red">
+            <i data-feather="star"></i>
+          </div>
+          <h3>Professional Cleaning Service</h3>
+          <p>As a value-add gift to every buyer client, we arrange a professional cleaning of your new home at your convenience — so you can move into a fresh, spotless space from day one.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon why-icon--blue">
+            <i data-feather="shield"></i>
+          </div>
+          <h3>Client-First, Always</h3>
+          <p>Your goals drive every decision we make. We negotiate strategically and fiercely on your behalf, ensuring you secure the right property at the right price.</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon why-icon--red">
+            <i data-feather="heart"></i>
+          </div>
+          <h3>We've Been In Your Shoes</h3>
+          <p>Both Brandon and Jai have personally navigated the homebuying process. That lived experience means empathy, honesty, and genuine guidance — not just a transaction.</p>
+        </div>
+      </div>
+
+      <div class="why-cta">
+        <a href="#contact" class="btn btn-primary btn-large">Start Your Buyer Journey</a>
+        <a href="#team" class="btn btn-outline btn-large">Meet Your Agents</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY SELL WITH US ========== -->
+  <section class="why-section why-sell" id="sell">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-chip section-chip--red">For Sellers</div>
+        <h2>Why Sell With Us?</h2>
+        <p class="section-sub">From listing day to closing, we deploy a full-service premium concierge that maximizes your property's value and minimizes days on market.</p>
+      </div>
+
+      <div class="sell-grid">
+        <div class="sell-card">
+          <div class="sell-card-icon">
+            <i data-feather="layout"></i>
+          </div>
+          <h3>Home Staging</h3>
+          <p>Expert property presentation that emotionally connects buyers to your home — strategically showcasing every space to maximize perceived value and accelerate offers.</p>
+        </div>
+
+        <div class="sell-card">
+          <div class="sell-card-icon">
+            <i data-feather="camera"></i>
+          </div>
+          <h3>Professional Photography</h3>
+          <p>High-definition, magazine-quality imagery captured by seasoned real estate photographers — the first impression that stops scrolling and books showings.</p>
+        </div>
+
+        <div class="sell-card sell-card--highlight">
+          <div class="sell-card-icon">
+            <i data-feather="video"></i>
+          </div>
+          <h3>Professional Videography</h3>
+          <p>Cinematic property walkthroughs including <strong>stunning drone footage</strong> that delivers an immersive aerial perspective, amplifying your listing's reach and appeal.</p>
+        </div>
+
+        <div class="sell-card">
+          <div class="sell-card-icon">
+            <i data-feather="pen-tool"></i>
+          </div>
+          <h3>Custom Graphic Design</h3>
+          <p>Localized print marketing campaigns featuring custom-designed flyers and mailers distributed directly in your property's neighbourhood to capture local buyer interest.</p>
+        </div>
+
+        <div class="sell-card">
+          <div class="sell-card-icon">
+            <i data-feather="file"></i>
+          </div>
+          <h3>Premium Printed Materials</h3>
+          <p>Luxury feature sheets handed to every showing visitor — highlighting pre-listing inspections, property highlights, and premium finishes in a polished, tangible format.</p>
+        </div>
+
+        <div class="sell-card">
+          <div class="sell-card-icon">
+            <i data-feather="zap"></i>
+          </div>
+          <h3>Professional Pre-Listing Cleaning</h3>
+          <p>A rigorous deep-clean by professional cleaners before your home hits the market — ensuring it shows at its absolute best from the very first viewing.</p>
+        </div>
+
+        <div class="sell-card sell-card--highlight">
+          <div class="sell-card-icon">
+            <i data-feather="globe"></i>
+          </div>
+          <h3>Multi-Platform Exposure</h3>
+          <p>Maximum reach across <strong>Realtor.ca</strong>, all major social media channels, and the global <strong>RE/MAX network</strong> — the world's #1 real estate brand with buyers in every market.</p>
+        </div>
+
+        <div class="sell-card">
+          <div class="sell-card-icon">
+            <i data-feather="map"></i>
+          </div>
+          <h3>Open House Campaigns</h3>
+          <p>High-visibility open house events backed by bold street signage strategically placed throughout the neighbourhood — directing every passerby directly to your property.</p>
+        </div>
+      </div>
+
+      <div class="why-cta">
+        <a href="#listings" class="btn btn-primary btn-large tab-trigger" data-tab="valuation">
+          <i data-feather="trending-up"></i> Get My Free Home Valuation
+        </a>
+        <a href="#contact" class="btn btn-outline btn-large">Talk to an Agent</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MEET THE TEAM ========== -->
+  <section class="team-section" id="team">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-chip">The Narsingh Team</div>
+        <h2>Meet the Partners</h2>
+        <p class="section-sub">Two generations of real estate excellence. One shared commitment: your success.</p>
+      </div>
+
+      <div class="team-grid">
+        <!-- Brandon -->
+        <div class="agent-card" id="card-brandon">
+          <div class="agent-img-wrap">
+            <img src="images/brandon-headshot.jpg" alt="Brandon Narsingh – RE/MAX Real Estate Agent" class="agent-img" loading="lazy" />
+            <div class="agent-badge-wrap">
+              <div class="award-badge award-badge--gold">
+                <i data-feather="award"></i>
+                <span>#1 Agent 2025</span>
+              </div>
+            </div>
+          </div>
+          <div class="agent-body">
+            <h3 class="agent-name">Brandon Narsingh</h3>
+            <p class="agent-title">Sales Representative · RE/MAX Community Realty Inc.</p>
+            <p class="agent-bio">Known for delivering results through strategic marketing, sharp negotiation, and a client-first approach. With a strong understanding of the local market and a commitment to excellence, Brandon ensures every client experiences a smooth and successful transaction.</p>
+            <p class="agent-personal"><i data-feather="smile"></i> When he's not selling real estate, he's hanging out with his 2 young children and looking for the next vacation with his wife.</p>
+
+            <div class="awards-block">
+              <div class="awards-header" id="brandon-awards-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="brandon-awards-list">
+                <i data-feather="award"></i>
+                <span>Show All Career Awards</span>
+                <i data-feather="chevron-down" class="chevron"></i>
+              </div>
+              <ul class="awards-list" id="brandon-awards-list" hidden>
+                <li><i data-feather="star"></i> <strong>#1 Top Producing Agent</strong> — RE/MAX Community Realty Inc., 2025</li>
+                <li><i data-feather="star"></i> RE/MAX 100% Club Award</li>
+                <li><i data-feather="star"></i> RE/MAX Platinum Club Award</li>
+                <li><i data-feather="star"></i> RE/MAX Chairman's Club Award</li>
+                <li><i data-feather="star"></i> Consistent Top Performer — GTA Region</li>
+              </ul>
+            </div>
+
+            <div class="agent-socials">
+              <a href="#contact" class="btn btn-sm btn-primary">Book a Consultation</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jai -->
+        <div class="agent-card" id="card-jai">
+          <div class="agent-img-wrap">
+            <img src="images/jai-headshot.jpg" alt="Jai Narsingh – RE/MAX Real Estate Agent" class="agent-img" loading="lazy" />
+            <div class="agent-badge-wrap">
+              <div class="award-badge award-badge--blue">
+                <i data-feather="clock"></i>
+                <span>40+ Yrs Experience</span>
+              </div>
+            </div>
+          </div>
+          <div class="agent-body">
+            <h3 class="agent-name">Jai Narsingh</h3>
+            <p class="agent-title">Broker · RE/MAX Community Realty Inc.</p>
+            <p class="agent-bio">Ambition, energy and charisma are just a few words that made Jai an industry pioneer. Adored by his many clients, Jai's experience in real estate has lasted over 40 years.</p>
+            <p class="agent-personal"><i data-feather="smile"></i> You can find Jai at the cottage in the summer months and travelling to warmer countries during the winter.</p>
+
+            <div class="awards-block">
+              <div class="awards-header" id="jai-awards-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="jai-awards-list">
+                <i data-feather="award"></i>
+                <span>Show All Career Awards</span>
+                <i data-feather="chevron-down" class="chevron"></i>
+              </div>
+              <ul class="awards-list" id="jai-awards-list" hidden>
+                <li><i data-feather="star"></i> RE/MAX Lifetime Achievement Award</li>
+                <li><i data-feather="star"></i> RE/MAX Hall of Fame Inductee</li>
+                <li><i data-feather="star"></i> RE/MAX Diamond Award</li>
+                <li><i data-feather="star"></i> RE/MAX Platinum Club Award — Multiple Years</li>
+                <li><i data-feather="star"></i> Industry Pioneer — 40+ Years Serving Clients</li>
+              </ul>
+            </div>
+
+            <div class="agent-socials">
+              <a href="#contact" class="btn btn-sm btn-primary">Book a Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-chip">Client Stories</div>
+        <h2>What Our Clients Say</h2>
+        <p class="section-sub">Don't take our word for it — hear from the families and investors we've helped achieve their real estate goals.</p>
+      </div>
+
+      <div class="testimonials-grid" id="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Brandon was an absolute rockstar throughout our home purchase. His market knowledge and negotiation skills saved us over $30,000 on our dream home. We couldn't have done it without him!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <strong>Michael &amp; Rachel T.</strong>
+              <span>First-Time Homebuyers, Brampton</span>
+            </div>
+            <div class="google-badge"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Google Review</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card--featured">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Jai has been in the business for so long and it truly shows. His calm experience and deep knowledge made us feel completely at ease throughout our entire sale. We sold in 5 days over asking!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SP</div>
+            <div>
+              <strong>Sunita &amp; Pradeep K.</strong>
+              <span>Sellers, Mississauga</span>
+            </div>
+            <div class="google-badge"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Google Review</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The full inspection report and professional cleaning were amazing bonuses we didn't expect. Brandon's team made the whole process so seamless. We're telling all our friends!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AL</div>
+            <div>
+              <strong>Amanda L.</strong>
+              <span>Buyer, Oakville</span>
+            </div>
+            <div class="google-badge"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Google Review</div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The drone video they produced for our listing was stunning. We had multiple offers within the first weekend. The entire Narsingh Team is truly next level."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DM</div>
+            <div>
+              <strong>David M.</strong>
+              <span>Seller, Burlington</span>
+            </div>
+            <div class="google-badge"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg> Google Review</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="google-cta">
+        <a href="https://g.page/r/narsinghteam/review" target="_blank" rel="noopener" class="btn btn-outline google-review-btn">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Leave Us a Google Review
+        </a>
+        <span class="review-stars">★★★★★ <strong>5.0</strong> on Google</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-chip">Get In Touch</div>
+        <h2>Ready to Make Your Move?</h2>
+        <p class="section-sub">Whether you're buying, selling, or just exploring — the Narsingh Team is here to help.</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-feather="phone"></i>
+              </div>
+              <div>
+                <span class="contact-label">Call Us</span>
+                <a href="tel:+16472052505" class="contact-value">(647) 205-2505</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-feather="mail"></i>
+              </div>
+              <div>
+                <span class="contact-label">Email Us</span>
+                <a href="mailto:brandon@narsinghteam.com" class="contact-value">brandon@narsinghteam.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-feather="map-pin"></i>
+              </div>
+              <div>
+                <span class="contact-label">Brokerage</span>
+                <span class="contact-value">RE/MAX Community Realty Inc.<br>Mississauga, ON</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <span class="social-label">Follow Us</span>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/brandonnarsingh.realestate" target="_blank" rel="noopener" class="social-icon social-icon--instagram" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <span>@narsinghteam</span>
+              </a>
+              <a href="https://www.facebook.com/brandonnarsinghrealestate" target="_blank" rel="noopener" class="social-icon social-icon--facebook" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                <span>NarsinghTeam</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field-group">
+              <label for="c-name">Full Name *</label>
+              <input type="text" id="c-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="field-group">
+              <label for="c-email">Email *</label>
+              <input type="email" id="c-email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field-group">
+              <label for="c-phone">Phone</label>
+              <input type="tel" id="c-phone" name="phone" placeholder="(416) 555-0123" />
+            </div>
+            <div class="field-group">
+              <label for="c-inquiry">Inquiry Type</label>
+              <select id="c-inquiry" name="inquiry">
+                <option value="">Select…</option>
+                <option value="buying">I'm looking to buy</option>
+                <option value="selling">I'm looking to sell</option>
+                <option value="valuation">Free home valuation</option>
+                <option value="general">General question</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-group">
+            <label for="c-message">Message *</label>
+            <textarea id="c-message" name="message" rows="4" placeholder="Tell us how we can help…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-large btn-block">
+            <i data-feather="send"></i> Send Message
+          </button>
+          <div class="form-success hidden" id="contact-success">
+            <i data-feather="check-circle"></i> Thanks! We'll be in touch within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-badge logo-badge--light">
+            <span class="logo-remax">RE/MAX</span>
+            <span class="logo-divider"></span>
+            <span class="logo-team">Narsingh<br>Team</span>
+          </div>
+          <p>Brandon &amp; Jai Narsingh<br>RE/MAX Community Realty Inc.<br>Mississauga, ON</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#listings" class="tab-trigger" data-tab="our-listings">Our Listings</a></li>
+            <li><a href="#listings" class="tab-trigger" data-tab="realtorca">Search MLS®</a></li>
+            <li><a href="#listings" class="tab-trigger" data-tab="valuation">Free Valuation</a></li>
+            <li><a href="#buy">Why Buy With Us</a></li>
+            <li><a href="#sell">Why Sell With Us</a></li>
+            <li><a href="#team">Meet the Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><a href="tel:+16472052505">(647) 205-2505</a></p>
+          <p><a href="mailto:brandon@narsinghteam.com">brandon@narsinghteam.com</a></p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/brandonnarsingh.realestate" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/brandonnarsinghrealestate" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Narsingh Real Estate Team. All rights reserved.</p>
+        <p class="footer-disclaimer">Brandon Narsingh &amp; Jai Narsingh are licensed Sales Representatives with RE/MAX Community Realty Inc., Brokerage. Not intended to solicit buyers or sellers currently under contract. The trademarks REALTOR®, REALTORS®, MLS®, Multiple Listing Service® and associated logos are owned or controlled by The Canadian Real Estate Association (CREA).</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
