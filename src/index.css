@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply font-sans antialiased; }
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-slate-100; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-300 rounded; }
+}
+
+@layer utilities {
+  .scroll-mt-header { scroll-margin-top: 80px; }
+}
+
+@keyframes scrollBob {
+  0%, 100% { top: 6px; opacity: 1; }
+  80% { top: 18px; opacity: 0; }
+}
+.scroll-indicator::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 2px;
+  animation: scrollBob 1.8s ease-in-out infinite;
+}
