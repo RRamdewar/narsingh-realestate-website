@@ -32,6 +32,22 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          # Calendar / Microsoft Graph config. Set these under
+          # Settings → Secrets and variables → Actions → Variables.
+          # The site builds fine without them (calendar pages show a setup notice).
+          VITE_MS_CLIENT_ID: ${{ vars.VITE_MS_CLIENT_ID }}
+          VITE_MS_AUTHORITY: ${{ vars.VITE_MS_AUTHORITY }}
+          VITE_MS_REDIRECT_URI: ${{ vars.VITE_MS_REDIRECT_URI }}
+          VITE_OWNER_NAME: ${{ vars.VITE_OWNER_NAME }}
+          VITE_OWNER_EMAIL: ${{ vars.VITE_OWNER_EMAIL }}
+          VITE_PUBLISHED_ICS_URL: ${{ vars.VITE_PUBLISHED_ICS_URL }}
+          VITE_AVAILABILITY_DAYS: ${{ vars.VITE_AVAILABILITY_DAYS }}
+          VITE_SLOT_MINUTES: ${{ vars.VITE_SLOT_MINUTES }}
+          VITE_DAY_START_HOUR: ${{ vars.VITE_DAY_START_HOUR }}
+          VITE_DAY_END_HOUR: ${{ vars.VITE_DAY_END_HOUR }}
+          VITE_WORKDAYS: ${{ vars.VITE_WORKDAYS }}
+          VITE_LEAD_TIME_HOURS: ${{ vars.VITE_LEAD_TIME_HOURS }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -1,4 +1,9 @@
-﻿node_modules/
+node_modules/
 dist/
 *.tsbuildinfo
 .claude/
+
+# Local environment overrides (calendar / Graph config)
+.env
+.env.local
+.env.*.local

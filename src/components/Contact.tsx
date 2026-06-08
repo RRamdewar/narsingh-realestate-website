@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
-import { Phone, Mail, MapPin, CheckCircle, Send } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { Phone, Mail, MapPin, CheckCircle, Send, CalendarCheck } from 'lucide-react'
 
 const INSTAGRAM_SVG = (
   <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -63,6 +64,17 @@ export default function Contact() {
                 </div>
               ))}
             </div>
+
+            <Link
+              to="/availability"
+              className="flex items-center gap-3 px-5 py-4 rounded-xl bg-rm-blue hover:bg-rm-blue-dark text-white font-semibold shadow-sm transition-all hover:-translate-y-px hover:shadow-lg hover:shadow-rm-blue/30"
+            >
+              <CalendarCheck size={20} className="flex-shrink-0" />
+              <span>
+                View My Availability
+                <span className="block text-xs font-normal text-white/70">See open times & request a meeting</span>
+              </span>
+            </Link>
 
             <div className="bg-white border border-slate-200 rounded-xl p-5">
               <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">Follow Us</p>
